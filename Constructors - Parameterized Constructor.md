@@ -4,29 +4,64 @@
 ---
 
 ### AIM  
-To write a Python code to create a class for a person with a parameterized constructor, which will take the `name` and `userid` of the person as parameters and print the `userid` of the person.
+Write python code to create a class Triangle and initialiaze the attributes(base and height) using default constructor and calculate the area of the triangle using user defined function.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Define a `person` class.  
-3. The `person` class should have a parameterized `__init__` method that accepts two parameters: `name` and `userid`.  
-4. Inside the `__init__` method, assign the `name` to `self.name` and the `userid` to `self.userid`.  
-5. Print the `self.userid`.  
-6. Prompt the user to enter their `name` (string) and `userid`.  
-7. Create an instance `s1` of the `person` class by passing the entered `name` and `userid` to the constructor.  
-8. Terminate the program.
+1. **Create a Class:**
+   - Define a class named `Triangle`.
+
+2. **Initialize Attributes:**
+   - In the default constructor (`__init__` method), initialize two attributes:
+     - `base` set to 0
+     - `height` set to 0
+
+3. **Define User-Defined Functions:**
+   - `set_dimensions(base, height)`:
+     - Takes two parameters: `base` and `height`.
+     - Assigns them to the class attributes.
+   - `calculate_area()`:
+     - Calculates the area of the triangle using the formula:
+       \[
+       \text{Area} = \frac{1}{2} \times \text{base} \times \text{height}
+       \]
+     - Returns the calculated area.
+
+4. **Input from User:**
+   - Create an object of the `Triangle` class.
+   - Take input from the user for `base` and `height`.
+
+5. **Set Values and Calculate Area:**
+   - Use the `set_dimensions` method to assign user input values.
+   - Call the `calculate_area` method to compute and display the area.
+
 
 ---
 
 ### PROGRAM
 
 ```
+class triangle:
+    def __init__(self,base,height):
+        self.base=base
+        self.height=height
+    def cal(self):
+        self.area=self.base*self.height*.5
+    def display(self):
+        print(f"Area of triangle: {self.area}")
+n1=int(input())
+n2=int(input())
+obj=triangle(n1,n2)
+obj.cal()
+obj.display()
 
 ```
 
 ### OUTPUT
 
+![Screenshot (203)](https://github.com/user-attachments/assets/5504940b-6d10-4224-970f-57875bcc7b0b)
+
 ### RESULT
+Thus the program to create a class Triangle and initialiaze the attributes(base and height) using default constructor and calculate the area of the triangle using user defined function is implemented amd executed successfully.
